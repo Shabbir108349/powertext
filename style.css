@@ -1,0 +1,31 @@
+body {
+  font-family: Arial;
+  width: 500px;
+  padding: 10px;
+}
+
+.inputs {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 50%;
+  padding: 6px;
+  align-items: center;
+  border-radius: 10px solid white;
+  background-color: rgb(47, 255, 116);
+  cursor: pointer;
+}
+
+#output {
+  margin-top: 10px;
+  border-top: 1px solid #16bd5b;
+  padding-top: 5px;
+}

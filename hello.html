@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Key-Value Store</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-  <div class="container">
-    <div class="inputs">
-      <input type="text" id="keyInput" placeholder="Key">
-      <input type="text" id="valueInput" placeholder="Value">
+<head>
+    <title>Key-Value Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="topbar">
+            <div class="brand">
+                <div class="logo">T</div>
+                <div>Text Expander Pro</div>
+            </div>
+            <div class="badge">TAB to expand</div>
+        </div>
+
+        <div class="content">
+            <div class="inputs">
+                <div class="field">
+                    <div class="label">Shortcut</div>
+                    <input id="keyInput" placeholder="arian" />
+                </div>
+                <div class="field">
+                    <div class="label">Expanded Text</div>
+                    <input id="valueInput" placeholder="Hi, I am Arian..." />
+                </div>
+            </div>
+
+            <div class="toolbar">
+                <button class="btn primary" id="addBtn">+ Add</button>
+                <div class="search">
+                    <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" style="width: 18px; height: 18px; margin-top: 4px;">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </span>
+                    <input id="search" placeholder="Search snippets..."/>
+                </div>
+            </div>
+
+            <div id="output" class="list"></div>
+        </div>
+
+        <div class="footer">
+            <div>Powered By : <span class="kbd">Arisha</span></div>
+            <div id="count">0 snippets</div>
+        </div>
     </div>
 
-    <button id="addBtn">Add</button>
-
-    <div id="output"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
